@@ -12,12 +12,12 @@
 
     {% if app.user %}
         <div class="mb-3">
-            You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+            You are logged in as {{ app.user.getUserIdentifier() }}, <a href="{{ path('app_logout') }}">Logout</a>
         </div>
     {% endif %}
 
 
-    <input class="inputconnexion" type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" placeholder="Adresse Mail" required autofocus>
+    <input class="inputconnexion" type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" placeholder="Adresse e-mail" required autofocus>
 
     <input class="inputconnexion" type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" placeholder="Mot de passe" required>
 
