@@ -14,8 +14,7 @@
     <p>{{ card.name }}</p>
     <p>{{ card.firstName }}</p>
     <p>{{ card.eMail }}</p>
-    <img src="{{ card.imageUser }}"  alt="image_user">
-
+    <img src="{{ asset('uploads/image-user')}} {{ card.imageUser }}" alt="image_user">
 {% endblock %}
 
 
