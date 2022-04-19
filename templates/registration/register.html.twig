@@ -3,18 +3,27 @@
 {% block title %}Register{% endblock %}
 
 {% block body %}
-    <h1>Register</h1>
 
+<div class="forms">
+    <h1>Register</h1>
+    <form action="" method="POST" class="login-email">
     {{ form_start(registrationForm) }}
+
         {{ form_row(registrationForm.email) }}
         {{ form_row(registrationForm.plainPassword, {
             label: 'Password'
         }) }}
         {{ form_row(registrationForm.agreeTerms) }}
 
-        <button type="submit" class="btn">Register</button>
+        <div class="input-group">
+            <button name="submit" class="btn">Connexion</button>
+        </div>
     {{ form_end(registrationForm) }}
-    <a href="{{ path('app_login') }}">Déja un compte ? Connectez vous</a>
+        <p class="login-register-text">you don't have an account ? <a href="{{ path('app_login') }}">Déja un compte ? Connectez vous</a>.</p>
+    </form>
+</div>
+
+
 {% endblock %}
 
 
