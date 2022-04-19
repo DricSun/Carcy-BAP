@@ -18,3 +18,4 @@ class CardController extends AbstractController
         ]);
     }
 }
+
