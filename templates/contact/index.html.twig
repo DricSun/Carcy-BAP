@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ContactController!{% endblock %}
+
+{% block body %}
+    <!--
+    Question :
+    https://openclassrooms.com/forum/sujet/formulaire-de-contact-responsive
+    -->
+    <div class="container">
+        <h1>Formulaire de contact</h1>
+        <form action="Form">
+
+
+            <label for="sujet">Sujet</label>
+            <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+
+
+
+            <label for="subject">Commentaire</label>
+            <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+{% endblock %}

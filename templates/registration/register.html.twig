@@ -7,19 +7,23 @@
 <div class="forms">
     <h1>Register</h1>
     <form action="" method="POST" class="login-email">
-    {{ form_start(registrationForm) }}
 
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+            {{ form_start(registrationForm) }}
+            {{ form_row(registrationForm.name) }}
+            {{ form_row(registrationForm.lastName) }}
+
+            {{ form_row(registrationForm.email) }}
+            {{ form_row(registrationForm.phone) }}
+            {{ form_row(registrationForm.plainPassword, {
+                label: 'Password'
+            }) }}
+            {{ form_row(registrationForm.agreeTerms) }}
 
         <div class="input-group">
-            <button name="submit" class="btn">Connexion</button>
+            <button name="submit" class="btn">Inscription</button>
         </div>
     {{ form_end(registrationForm) }}
-        <p class="login-register-text">you don't have an account ? <a href="{{ path('app_login') }}">Déja un compte ? Connectez vous</a>.</p>
+        <p class="login-register-text"> <a href="{{ path('app_login') }}">J’ai déjà un compte, je me connecte</a></p>
     </form>
 </div>
 
