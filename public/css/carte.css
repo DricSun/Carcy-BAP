@@ -1,0 +1,24 @@
+body{
+    height: 100vh;
+    background-image: url("../imagesbap/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.partage{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.aaa{
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: white;
+    background: #F28774;
+    border-radius: 20px;
+    border: none;
+
+
+}
