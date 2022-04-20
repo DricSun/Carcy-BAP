@@ -63,6 +63,9 @@ class Card
     #[ORM\OneToMany(mappedBy: 'Card', targetEntity: Directory::class)]
     private $directories;
 
+    #[ORM\OneToOne(mappedBy: 'card', targetEntity: User::class, cascade: ['persist', 'remove'])]
+    private $user;
+
     public function __construct()
     {
         $this->directories = new ArrayCollection();
@@ -279,6 +282,23 @@ class Card
                 $directory->setCard(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(User $user): self
+    {
+        // set the owning side of the relation if necessary
+        if ($user->getCardId() !== $this) {
+            $user->setCardId($this);
+        }
+
+        $this->user = $user;
 
         return $this;
     }

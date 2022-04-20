@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Card;
 use App\Entity\User;
 use App\Form\RegistrationFormType;
 use App\Security\UserAuthentificatorAuthenticator;
@@ -31,6 +32,15 @@ class RegistrationController extends AbstractController
                     $form->get('plainPassword')->getData()
                 )
             );
+
+            $user
+                ->setCard(
+                    (new Card())
+                        ->setName('name')
+                        ->setFirstName('first name')
+                        ->setEMail('user@gmail.com')
+                        ->setTelPerso('0654392854')
+                );
 
             $entityManager->persist($user);
             $entityManager->flush();

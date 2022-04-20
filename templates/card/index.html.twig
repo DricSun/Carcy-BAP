@@ -8,13 +8,16 @@
 <div class="example-wrapper">
     <h1>My Card</h1>
 </div>
-<h2>Informations Personnelles</h2>
+<h2>Informations Personnelles *</h2>
 
-
+    <img src="{{ asset('public/uploads/image-user/' ~ card.imageUser)}} " alt="image_user">
     <p>{{ card.name }}</p>
     <p>{{ card.firstName }}</p>
     <p>{{ card.eMail }}</p>
-    <img src="{{ asset('uploads/image-user')}} {{ card.imageUser }}" alt="image_user">
+    <h2>Informations Supplémentaires</h2>
+    <p>{{ card.telPerso }}</p>
 {% endblock %}
+
+
 
 

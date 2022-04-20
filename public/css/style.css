@@ -24,6 +24,7 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 20px;
+
 }
 
 .inputconnexion{
@@ -43,4 +44,29 @@ h1{
 .faq-title{
     text-align: center;
     color: white;
+}
+
+
+footer{
+    background-color: #7364D2;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.réseaux{
+    display: flex;
+    gap: 20px;
+}
+
+.email-footer{
+    color: white;
+}
+
+.copyright{
+    margin-top: 35px;
 }
