@@ -51,16 +51,17 @@ class UserAuthentificatorAuthenticator extends AbstractLoginFormAuthenticator
 
         // For example:
         //return new RedirectResponse($this->urlGenerator->generate('some_route'));
-<<<<<<< HEAD
+
         $user = $token->getUser();
         return new RedirectResponse($this->urlGenerator->generate('app_card', ['id' => $user->getCard()->getId()]));
-=======
-        return new RedirectResponse($this->urlGenerator->generate('app_faq'));
->>>>>>> 339e27e41bb77b187edc215763479c708784386d
+
+        }
+
+        protected
+        function getLoginUrl(Request $request): string
+        {
+            return $this->urlGenerator->generate(self::LOGIN_ROUTE);
+        }
     }
 
-    protected function getLoginUrl(Request $request): string
-    {
-        return $this->urlGenerator->generate(self::LOGIN_ROUTE);
-    }
-}
+
