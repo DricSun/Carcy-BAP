@@ -55,10 +55,15 @@ class UserAuthentificatorAuthenticator extends AbstractLoginFormAuthenticator
         $user = $token->getUser();
         return new RedirectResponse($this->urlGenerator->generate('app_card', ['id' => $user->getCard()->getId()]));
 
+
+        }
+
+        protected
+        function getLoginUrl(Request $request): string
+        {
+            return $this->urlGenerator->generate(self::LOGIN_ROUTE);
+        }
+
     }
 
-    protected function getLoginUrl(Request $request): string
-    {
-        return $this->urlGenerator->generate(self::LOGIN_ROUTE);
-    }
-}
+
