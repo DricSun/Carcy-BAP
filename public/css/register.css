@@ -28,7 +28,11 @@
     display: block;
     text-transform: capitalize;
 }
+ label.form-check-label required {
+    height: 20px;
+    width: 15px;
 
+}
 .forms .login-social {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
@@ -88,7 +92,6 @@
     cursor: pointer;
     transition: .3s;
 }
-
 .forms .login-email .input-group .btn:hover {
     transform: translateY(-5px);
     background: #F28774;

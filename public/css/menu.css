@@ -2,31 +2,22 @@
 #burger{
     display: none;
 }
-body h1 {
-    position: fixed;
-    top: 40px;
-    left: 40px;
-    z-index: 6;
-    font-size: 20px;
-    font-weight: 900;
-    font-family: sans-serif;
-    text-transform: uppercase;
-}
-body h1 > span {
+
+ h1 > span {
     text-transform: none;
     opacity: 0.5;
     font-weight: 300;
     font-size: 12px;
 }
-body input + label {
+ input + label {
     position: fixed;
     top: 20px;
-    right: 40px;
+    right: 16px;
     height: 20px;
     width: 15px;
     z-index: 5;
 }
-body input + label span {
+ input + label span {
     position: absolute;
     width: 100%;
     height: 2px;
