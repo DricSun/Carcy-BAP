@@ -28,11 +28,10 @@ symfony make:migration
 symfony doctrine:migration:migrate
 ```
 ### Lancer le serveur 
-``
+```
 symfony server:start
 
-``
-
+```
 ### Stop le serveur
 ```
 symfony server:stop
