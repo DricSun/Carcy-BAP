@@ -1,8 +1,5 @@
 # Carcy-BAP
 
-Découvrir NodeJS : 
-  - Faire une API avec un système de connexion (email & mdp) Sytème de messagerie (envoie d'un nom et un message et ça le rajoute dans le back)
-  - Utiliser un CMS inconnue (VueJS, React ou Angular) & faire un front pour communiquer avec
 
 
 ### Installation
