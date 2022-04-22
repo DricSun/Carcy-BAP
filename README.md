@@ -20,7 +20,8 @@ npm install
 ```
 symfony fixtures:load
 ``
-### Migré la base de donner
+  ### Migré la base de donner
+
 ```
 symfony make:migration
 ```
@@ -29,9 +30,10 @@ symfony make:migration
 symfony doctrine:migration:migrate
 ```
 ### Lancer le serveur 
-```
+``
 symfony server:start
-```
+
+``
 
 ### Stop le serveur
 ```
