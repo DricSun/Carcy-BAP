@@ -82,3 +82,79 @@ footer{
     text-decoration: none;
     color: #EC483F;
 }
+
+/* Statistiques
+
+ */
+
+.statistique{
+    display: flex;
+    justify-content: center;
+}
+
+.containeur_statistiques{
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.contain-time , li{
+    list-style: none;
+}
+
+.contain-time{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2ECEC;
+    border-radius: 20px;
+    height: 40px;
+    align-items: center;
+}
+
+.contain-icones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.icones-telechargement{
+    display: flex;
+    background-color: #F2ECEC;
+    padding: 15px;
+    border-radius: 11px;
+    align-items: center;
+}
+
+.icones{
+    background-color: #F2ECEC;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 11px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+.icon-flex{
+    display: flex;
+    gap: 20px;
+}
+
+.icones > img{
+    width: 64px;
+}
+
+.list-stat:hover{
+    background-color: orange;
+
+}
+
+.list-stat{
+    width: 5%;
+    text-align: center;
+    border-radius: 10px;
+}

@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+<h2>Mon espace</h2>
+<div class="statistique">
+<div class="containeur_statistiques">
+    <div class="contain-time">
+        <li class="list-stat">
+            Jour
+        </li>
+        <li class="list-stat">
+            Semaine
+        </li>
+        <li class="list-stat">
+            Mois
+        </li>
+    </div>
+    <div class="contain-icones">
+        <div class="icon-flex">
+            <div class="icones">
+                <img src="{{ asset('imagesbap/yeux.png') }}">
+                <p>10 vues</p>
+            </div>
+            <div class="icones">
+                <img src="{{ asset('imagesbap/mail.png') }}">
+                <p>2 clics/mail</p>
+            </div>
+        </div>
+        <div class="icon-flex">
+        <div class="icones">
+            <img src="{{ asset('imagesbap/tel.png') }}">
+            <p>13 clicks/tel</p>
+        </div>
+        <div class="icones">
+            <img src="{{ asset('imagesbap/web.png') }}">
+            <p>40 clicks/site</p>
+        </div>
+        </div>
+        <div class="icones-telechargement">
+            <img src="{{ asset('imagesbap/download.png') }}">
+            <p>32 téléchargements</p>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
