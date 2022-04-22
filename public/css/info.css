@@ -1,0 +1,38 @@
+.card_top{
+    padding-bottom: 25px;
+    display: flex;
+}
+.card_all{
+    display: flex;
+}
+
+.card_top img{
+    width: 112px;
+    height: 112px;
+}
+.form-control-file{
+
+}
+h7 {
+
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.telephone_card{
+    display: flex;
+    padding-top: 15px;
+}
+.telephone_card img{
+    width: 20px;
+    height: 20px;
+}
+.telephone_card p{
+    padding-left: 15px;
+}
+.info_supp img{
+    margin-top: 25px;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+}
