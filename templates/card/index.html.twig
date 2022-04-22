@@ -4,20 +4,50 @@
 
 {% block body %}
 
-<h2>Informations Personnelles *</h2>
-
-    <img src="{{ asset('public/uploads/image-user/' ~ card.imageUser)}} " alt="image_user">
-    <p>{{ card.user.name }}</p>
-    <p>{{ card.user.lastName }}</p>
-    <p>{{ card.user.eMail }}</p>
-    <p>{{ card.user.phone }}</p>
-
-    <h2>Informations Supplémentaires</h2>
+    <div class="envelop-form">
+        <div class="forms">
+            <div class="card_all">
+            <div class="card_top">
+                <img src="{{ asset('imagesbap/jack.jpg') }}">
 
 
-    <p>{{ card.title }}</p>
-    <p>{{ card.society }}</p>
+            </div>
 
+            </div>
+            <h7>Informations Personnelles </h7>
+
+            <div class="telephone_card">
+                <img src="{{ asset('imagesbap/ACCOUNT PNG.png') }}">
+                <p>{{ card.user.name }}</p>
+                <p>{{ card.user.lastName }}</p>
+            </div>
+            <div class="telephone_card">
+                <img src="{{ asset('imagesbap/emailcard.png') }}">
+                <p>{{ card.user.eMail }}</p>
+            </div>
+            <div class="telephone_card">
+                 <img src="{{ asset('imagesbap/telcard.png') }}">
+                <p>{{ card.user.phone }}</p>
+            </div>
+
+            <h7>Informations Supplémentaires</h7>
+
+          <div class="info_supp">
+              <img src="{{ asset('imagesbap/role.png') }}">
+              <img src="{{ asset('imagesbap/societe.png') }}">
+              <img src="{{ asset('imagesbap/internet.png') }}">
+          </div>
+            <div class="info_supp">
+                <img src="{{ asset('imagesbap/telperso.png') }}">
+                <img src="{{ asset('imagesbap/email_info.png') }}">
+                <img src="{{ asset('imagesbap/adresse.png') }}">
+            </div>
+
+
+
+
+        </div>
+    </div>
 
 {% endblock %}
 
