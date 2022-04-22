@@ -16,13 +16,13 @@ npm install
  Fixtures
 ```
 symfony fixtures:load
-``
- 
-
-### Migré la base de donner
+```
+Migré la base de donner
 ```
 symfony make:migration
-``
+```
+
+
 ### Excuté
 ```
 symfony doctrine:migration:migrate
