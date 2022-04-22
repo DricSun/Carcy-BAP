@@ -19,6 +19,29 @@ body{
     background: #F28774;
     border-radius: 20px;
     border: none;
+}
+.aas{
+    display: flex;
+    justify-content: center;
+    width: 289px;
+    height: 105px;
+    right: 60px;
+    top: 266px;
+    margin-bottom: 15px;
+    padding-right: 35px;
+    padding-top: 20px;
+    background: linear-gradient(104.27deg, rgba(242, 92, 84, 0.88) 1.56%, rgba(242, 110, 89, 0.83) 42.79%, #7364D2 89.05%);
+    border-radius: 20px;
+}
+.aas img{
 
+    width: 60px;
+    height: 60px;
 
 }
+.texte_rep p {
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+}
+
