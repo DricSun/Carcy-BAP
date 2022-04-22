@@ -158,3 +158,64 @@ footer{
     text-align: center;
     border-radius: 10px;
 }
+
+
+/*
+ Directory
+ */
+
+.contain-directory{
+    display: flex;
+    justify-content: center;
+}
+
+.directory{
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.directory >  h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.align-input-directory{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.input-directory{
+    height: 36px;
+    width: 255px;
+    border-radius: 10px;
+}
+
+.buttonplus{
+    width: 51px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.img-card{
+
+    height: 148px;
+}
+
+.sous-title-directory{
+    margin-top: 20px;
+}

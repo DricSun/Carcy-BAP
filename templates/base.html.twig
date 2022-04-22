@@ -37,21 +37,19 @@
 
         <nav>
             <ul>
-                <li><a href="#">Ma carte</a></li>
+                <li><a href="">Ma carte</a></li>
                 <li><a href="#">Mon espace</a></li>
-                <li><a href="#">Mon répertoire</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="{{ path('app_directory') }}">Mon répertoire</a></li>
+                <li><a href="{{ path('app_contact') }}">Contact</a></li>
+                <li><a href="{{ path('app_faq') }}">FAQ</a></li>
             </ul>
         </nav>
     </head>
     <body>
-<<<<<<< HEAD
-        <h1>My Ccard</h1>
-=======
 
         <h1>My Card</h1>
->>>>>>> a83a65982d34d1718b667390725aecb1cd4cbff9
+
+
         {% block body %}
 
         {% endblock %}

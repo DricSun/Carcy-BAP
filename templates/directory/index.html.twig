@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+    <section class="contain-directory">
+    <div class="directory">
+        <h2>Mon Répertoire</h2>
+        <div class="align-input-directory">
+            <input class="input-directory" type="text" placeholder="Trouver un client">
+            <button class="buttonplus">
+                <img src="{{ asset('imagesbap/+.png') }}">
+            </button>
+        </div>
+        <strong><p class="sous-title-directory">Cartes récemment ajoutées :</p></strong>
+        <div class="align-card">
+            <div class="img-card">
+                <img src="{{ asset('imagesbap/photo1.png') }}">
+            </div>
+            <div class="img-card">
+                <img src="{{ asset('imagesbap/photo2.png') }}">
+            </div>
+            <div class="img-card">
+                <img src="{{ asset('imagesbap/photo3.png') }}">
+            </div>
+        </div>
+        <strong><p class="sous-title-directory">Toutes les cartes :</p></strong>
+        <div class="align-card">
+            <div class="img-card">
+                <img src="{{ asset('imagesbap/photo4.png') }}">
+            </div>
+            <div class="img-card">
+                <img src="{{ asset('imagesbap/photo5.png') }}">
+            </div>
+            <div class="img-card">
+                <img src="{{ asset('imagesbap/photo6.png') }}">
+            </div>
+        </div>
+    </div>
+    </section>
+{% endblock %}
